@@ -1,0 +1,124 @@
+:root {
+  --website-primary-color: #e2c18b;
+  --s1-color: #3b8446;
+  --s2-color: #24502f;
+  --border-color: #161914;
+  --text-primary: #fff;
+  --text-secondary: #eeeeee;
+  --themeDotBorder: #fff;
+  --previewShadow: #2a2f25;
+  --previewBg: rgb(191, 91, 40, 0.01);
+  --buttonColor: var(--website-primary-color);
+}
+
+.s1::before {
+  background-image: url("../img/bg/green\ polygon.png");
+  opacity: 0.3;
+}
+
+#preview::before {
+  content: "";
+  bottom: 20px;
+  right: 10px;
+  background: var(--previewShadow);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.6;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.downloand-resume {
+  color: var(--website-primary-color);
+}
+
+.bottom-line {
+  background: var(--buttonColor);
+}
+
+#work {
+  background: var(--s1-color);
+}
+
+#preview h3,
+#preview p {
+  color: #fff;
+  text-shadow: 0.09rem 0.09rem 0.09rem black;
+}
+
+p,
+li,
+label,
+input,
+textarea {
+  color: var(--text-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: #669966;
+}
+
+#social-image img {
+  border-top: 2px solid var(--website-primary-color);
+  border-bottom: none;
+}
+
+#preview {
+  width: 300px;
+  border: 1.5px solid var(--website-primary-color);
+  background: var(--previewBg);
+  padding: 1.2rem;
+  position: relative;
+  -webkit-box-shadow: -1px 1px 3px -1px rgb(0 0 0 / 75%);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgb(0 0 0 / 75%);
+}
+
+.corner {
+  border: 1.5px solid var(--website-primary-color);
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Roboto Mono", monospace;
+  background: var(--website-primary-color);
+  font-weight: 500;
+  color: #fff;
+  padding: 0.7rem 0.1rem;
+  border-radius: 3px;
+  margin: 1.7rem 0;
+}
+
+.skills-wrapper ul li {
+  color: black;
+}
+
+.find-me i {
+  color: var(--website-primary-color);
+}
+
+/* Work */
+.items .item .item-text .item-text-wrap p,
+.items .item .item-text .item-text-wrap h1 {
+  color: black !important;
+}
+
+.btn-work {
+  border: 3px solid var(--border-color);
+  color: var(--border-color);
+}
+
+.btn-work:hover {
+  background-color: var(--border-color);
+  background-image: none;
+  color: var(--text-primary);
+}
+
+.about-wrapper p {
+  opacity: 1;
+}
