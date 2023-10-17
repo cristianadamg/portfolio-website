@@ -1,0 +1,133 @@
+@media screen and (max-width: 1350px) {
+  .s1 .main-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+
+  .s1 .main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .browser-window {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "leftColumn"
+      "rightColumn";
+    margin-top: 1.9rem;
+  }
+
+  .left-column {
+    grid-area: leftColumn;
+    padding: 0;
+  }
+
+  .greeting-wrapper {
+    display: none;
+  }
+
+  .nav-menu li a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 4px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu li:first-child,
+  .nav-menu li:nth-child(2) {
+    display: none;
+  }
+
+  .right-column {
+    justify-content: center;
+    padding-top: 0.1rem !important;
+  }
+
+  #preview {
+    margin-left: 2rem;
+  }
+
+  .about-wrapper {
+    text-align: center;
+    padding-top: 10px;
+    grid-gap: 1rem;
+  }
+
+  #social-image img {
+    width: 370px;
+    margin: 1rem 0;
+  }
+
+  .displayUI {
+    display: none;
+  }
+
+  .displayMobile {
+    display: block;
+  }
+
+  .find-me ul li a {
+    font-size: 1.2rem;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 890px) {
+  .right-column {
+    padding-top: 3rem !important;
+  }
+
+  .left-column {
+    height: 50vh;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-gap: 2rem;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-column {
+    height: 60vh;
+  }
+
+  #preview {
+    width: 250px;
+    margin-top: 1rem;
+    border: 1.5px solid #333333;
+    background: var(--previewBg);
+    padding: 1.2rem;
+    position: relative;
+    -webkit-box-shadow: -1px 1px 3px -1px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgb(0 0 0 / 75%);
+  }
+
+  #preview h3 {
+    font-size: 1.45rem !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #preview {
+    margin-top: 4rem;
+  }
+}
